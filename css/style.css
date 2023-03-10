@@ -52,10 +52,9 @@ nav header a {
     font-weight: 700;
     font-size: 16px;
     color: white;
+    --bs-nav-link-hover-color:lightgrey;
 }
-.nav-link :hover{
-    color: white !important;
-}
+
 /* Tamaño de iconos */
 nav ul li a img {
     width: 40px;
