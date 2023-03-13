@@ -11,11 +11,12 @@
 a {
     text-decoration: none;
 }
-
+body header{
+    z-index: 1;
+}
 /* Side Bar */
-nav {
-    position: fixed;
-    width: 40%;
+#sidebar {
+    width: 250px;
     min-height: 100vh;
     max-width: 25vh;
     background: linear-gradient(90deg, rgb(195, 191, 152) 0%, rgb(193, 193, 161) 100%);
@@ -29,7 +30,7 @@ hr {
 }
 
 /* Ajustar Fuente*/
-nav header a {
+#sidebar header a {
     display: flex;
     justify-content: center;
     font-size: 40px;
@@ -56,37 +57,39 @@ nav header a {
 }
 
 /* Tamaño de iconos */
-nav ul li a img {
+#sidebar ul li a img {
     width: 40px;
 }
 
 /* Centrado de iconos */
-nav ul li .socialMedia{
+#sidebar ul li .socialMedia{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 /* Colores de redes sociales */
-nav ul .bgFb{
+#sidebar ul .bgFb{
     background-color:#3b5998 !important;
 }
 
-nav ul .bgIg{
+#sidebar ul .bgIg{
     margin: 10px 0 10px 0;
     background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
 }
 
-nav ul .bgWpp{
+#sidebar ul .bgWpp{
     background-color:#25D366 !important;
 }
 
-/* Main */
+/* Main*/
 main {
-    padding-left: 250px;
+    min-height: 100vh;
 }
 
 /* Banner */
 .banner {
+    width: 100%;
+    padding: 0 0 0 0;
     height: 40vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0)70%, rgb(255, 255, 255, 1)), url("https://www.cardelliefontana.com/villabianca/images/small.jpg");
     background-size: contain;

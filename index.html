@@ -12,10 +12,21 @@
     <title>FrameYou | Inicio</title>
 </head>
 
-<body>
-    <header>
-        <!--Barra de navegacion-->
-        <nav class="d-flex flex-column flex-shrink-0 p-3">
+<body class="d-flex min-vh-100">
+            <!--Nav-->
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Navbar</a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+    <header class="flex-shrink-0">
+
+        <!--SideBar-->
+        <nav id="sidebar" class="d-flex flex-shrink-0 flex-column p-3">
             <!--Logo-->
             <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
                 <header><a href="#">FrameYou</a></header>
@@ -107,20 +118,23 @@
         </nav>
     </header>
     <!--Main-->
-    <main>
+    <main class="flex-grow-1">
         <!--Banner-->
         <section class="banner">
-        </section>
+        </section> 
+
         <!--Encabezado-->
         <section>
             <h1>Tipos de Cuadros</h1>
         </section>
+        
         <!--Texto informativo-->
         <section class="text">
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, explicabo? Quod corrupti aliquid
                 illum. Doloremque aliquam odio porro molestias, iste modi quisquam ea. Dolorum commodi, nesciunt illum
                 iure recusandae maxime.</p>
         </section>
+
         <!--Cards-->
         <section class="cardsContainer">
             <div class="cards">
