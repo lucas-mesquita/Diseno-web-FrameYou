@@ -54,12 +54,7 @@ hr {
     font-size: 16px;
     color: white;
     --bs-nav-link-hover-color:lightgrey;
-}
-
-/* Tamaño de iconos */
-#sidebar ul li a img {
-    width: 40px;
-}
+}¨
 
 /* Centrado de iconos */
 #sidebar ul li .socialMedia{
