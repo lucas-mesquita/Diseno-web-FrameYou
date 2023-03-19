@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    box-sizing: border-box;
-}
+/* Base */
+@import "./base/_reset.scss";
 
-/* Imprt fonts */
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@400;500;600;700&display=swap');
 
 a {
