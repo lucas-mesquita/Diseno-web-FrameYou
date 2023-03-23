@@ -1,0 +1,73 @@
+/* Side Bar */
+header {
+    z-index: 1;
+    #sidebar {
+        width: 250px;
+        min-height: 100vh;
+        height: 100%;
+        max-width: 25vh;
+        background: linear-gradient(90deg, #c3bf98 0%, rgb(193, 193, 161) 100%);
+        box-shadow: 0px 0px 20px 0px rgb(140, 140, 140);
+
+        // Ajustar Fuente
+        #logo {
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-family: 'Oleo Script', 'Arial';
+            color: white;
+        }
+
+        // Darle color a la linea 
+        hr {
+            color: white;
+            opacity: 1;
+        }
+
+        ul li {
+
+            // Modificar active 
+            .active {
+                font-family: 'Poppins', 'Arial';
+                font-weight: 700;
+                font-size: 16px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.129) !important;
+            }
+
+            // Modificar nav-link 
+            .nav-link {
+                font-family: 'Poppins', 'Arial';
+                font-weight: 700;
+                font-size: 16px;
+                color: white;
+                --bs-nav-link-hover-color: lightgrey;
+            }
+
+            // Centrado de iconos 
+            .socialMedia {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            // Colores de redes sociales 
+            .bgFb {
+                background-color: #3b5998 !important;
+            }
+
+            .bgFb {
+                background-color: #3b5998 !important;
+            }
+
+            .bgIg {
+                margin: 10px 0 10px 0;
+                background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
+            }
+
+            .bgWpp {
+                background-color: #25D366 !important;
+            }
+        }
+    }
+}

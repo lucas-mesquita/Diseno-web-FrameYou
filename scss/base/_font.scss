@@ -1,0 +1,38 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@400;500;600;700&display=swap');
+
+// H1 
+h1 {
+    text-align: center;
+    font-family: 'Poppins', 'Arial';
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(50, 50, 50);
+}
+
+// H2 
+h2 {
+    text-align: center;
+    font-family: 'Poppins', 'Arial';
+    font-weight: 700;
+    font-size: 18px;
+    color: rgb(50, 50, 50)
+}
+
+// H3 
+h3 {
+    text-align: center;
+    font-family: 'Poppins', 'Arial';
+    font-weight: 700;
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}
+
+// Texto de relleno 
+p {
+    text-align: center;
+    font-family: 'Poppins', 'Arial';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(50, 50, 50);
+}

@@ -1,5 +1,4 @@
-@charset "UTF-8";
-/* Base */
+/* Base */ /* Resets */
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
@@ -8,93 +7,11 @@
   box-sizing: border-box;
 }
 
-/* Import fonts */
 a {
   text-decoration: none;
 }
 
-body header {
-  z-index: 1;
-}
-
-/* Side Bar */
-#sidebar {
-  width: 250px;
-  min-height: 100vh;
-  max-width: 25vh;
-  background: linear-gradient(90deg, rgb(195, 191, 152) 0%, rgb(193, 193, 161) 100%);
-  box-shadow: 0px 0px 20px 0px rgb(140, 140, 140);
-}
-
-/* Darle color a la linea */
-hr {
-  color: white;
-  opacity: 1;
-}
-
-/* Ajustar Fuente*/
-#sidebar header a {
-  display: flex;
-  justify-content: center;
-  font-size: 40px;
-  font-family: "Oleo Script", "Arial";
-  color: white;
-}
-
-/* Modificar active */
-.active {
-  font-family: "Poppins", "Arial";
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.129) !important;
-}
-
-/* Modificar nav-link */
-.nav-link {
-  font-family: "Poppins", "Arial";
-  font-weight: 700;
-  font-size: 16px;
-  color: white;
-  --bs-nav-link-hover-color:lightgrey;
-}
-
-¨ #sidebar ul li .socialMedia {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Colores de redes sociales */
-#sidebar ul .bgFb {
-  background-color: #3b5998 !important;
-}
-
-#sidebar ul .bgIg {
-  margin: 10px 0 10px 0;
-  background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
-}
-
-#sidebar ul .bgWpp {
-  background-color: #25D366 !important;
-}
-
-/* Main*/
-main {
-  min-height: 100vh;
-}
-
-/* Banner */
-.banner {
-  width: 100%;
-  padding: 0 0 0 0;
-  height: 40vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0) 70%, rgb(255, 255, 255)), url("https://www.cardelliefontana.com/villabianca/images/small.jpg");
-  background-size: contain;
-  background-position: center;
-}
-
-/* H1 */
+/* Import fonts */
 h1 {
   text-align: center;
   font-family: "Poppins", "Arial";
@@ -103,7 +20,6 @@ h1 {
   color: rgb(50, 50, 50);
 }
 
-/* H2 */
 h2 {
   text-align: center;
   font-family: "Poppins", "Arial";
@@ -112,7 +28,6 @@ h2 {
   color: rgb(50, 50, 50);
 }
 
-/* H3 */
 h3 {
   text-align: center;
   font-family: "Poppins", "Arial";
@@ -121,7 +36,6 @@ h3 {
   color: rgb(50, 50, 50);
 }
 
-/* Texto de relleno */
 p {
   text-align: center;
   font-family: "Poppins", "Arial";
@@ -130,56 +44,113 @@ p {
   color: rgb(50, 50, 50);
 }
 
-.text {
-  padding: 20px 100px;
+/* Layout */
+/* Side Bar */
+header {
+  z-index: 1;
+}
+header #sidebar {
+  width: 250px;
+  min-height: 100vh;
+  height: 100%;
+  max-width: 25vh;
+  background: linear-gradient(90deg, #c3bf98 0%, rgb(193, 193, 161) 100%);
+  box-shadow: 0px 0px 20px 0px rgb(140, 140, 140);
+}
+header #sidebar #logo {
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Oleo Script", "Arial";
+  color: white;
+}
+header #sidebar hr {
+  color: white;
+  opacity: 1;
+}
+header #sidebar ul li .active {
+  font-family: "Poppins", "Arial";
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.129) !important;
+}
+header #sidebar ul li .nav-link {
+  font-family: "Poppins", "Arial";
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  --bs-nav-link-hover-color: lightgrey;
+}
+header #sidebar ul li .socialMedia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header #sidebar ul li .bgFb {
+  background-color: #3b5998 !important;
+}
+header #sidebar ul li .bgFb {
+  background-color: #3b5998 !important;
+}
+header #sidebar ul li .bgIg {
+  margin: 10px 0 10px 0;
+  background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
+}
+header #sidebar ul li .bgWpp {
+  background-color: #25D366 !important;
 }
 
-/* Cards */
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  padding-right: 50px;
+  text-align: right;
+  background: linear-gradient(-90deg, rgb(195, 191, 152) 0%, rgb(193, 193, 161) 100%);
+}
+footer .textPie {
+  font-family: "Poppins", "Arial";
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+}
+
+/* Main*/
+main {
+  min-height: 100vh;
+  height: 100%;
+}
+main .text {
+  padding: 20px 50px;
+}
+main .row {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
 main section {
   text-align: center;
 }
-
-/* Cards tamaño y diseño */
-.cards {
-  display: inline-block;
-  width: 20%;
-  height: 300px;
-  margin: auto 20px;
+main section article .card {
   box-shadow: 0px 4px 10px 0px rgb(185, 185, 185);
   border-radius: 5%;
   overflow: hidden;
-  transition-duration: 1s;
+  border: none;
+  align-items: center;
 }
-
-/* Efecto */
-.cards:hover {
-  width: 25%;
-  height: 350px;
-}
-
-.cards img {
-  width: 100%;
-}
-
-/* Titulo */
-.titulo {
-  padding-top: 50px;
-}
-
-/* Formulario pagina ayuda */
-form {
+main form {
   text-align: center;
 }
-
-.itemForm {
+main form .itemForm {
   display: inline-block;
   width: 500px;
   height: 250px;
   text-align: left;
 }
-
-/* Lado Izq*/
-.ingresoForm {
+main form .itemForm .ingresoForm {
   margin: 10px 0;
   height: 40px;
   width: 400px;
@@ -188,16 +159,13 @@ form {
   font-size: 16px;
   color: rgb(50, 50, 50);
 }
-
-/* Lado Der*/
-.ingresoText {
+main form .itemForm .ingresoText {
   font-family: "Poppins", "Arial";
   font-weight: 400;
   font-size: 16px;
   color: rgb(50, 50, 50);
 }
-
-.botonForm {
+main form .botonContainer .botonForm {
   width: 200px;
   height: 30px;
   font-family: "Poppins", "Arial";
@@ -208,23 +176,10 @@ form {
   border: 0px;
 }
 
-/* Footer */
-footer {
-  height: 30px;
-  width: 100%;
-  padding-right: 50px;
-  box-sizing: border-box;
-  text-align: right;
-  background: linear-gradient(-90deg, rgb(195, 191, 152) 0%, rgb(193, 193, 161) 100%);
-  position: fixed;
-  bottom: 0;
-}
-
-footer .textPie {
-  font-family: "Poppins", "Arial";
-  font-weight: 400;
-  font-size: 12px;
-  color: rgb(255, 255, 255);
-}
+/* Hover 
+.cards:hover {
+    width: 25%;
+    height: 350px;
+}*/
 
 /*# sourceMappingURL=style.css.map */
