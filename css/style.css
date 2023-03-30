@@ -103,12 +103,26 @@ header #sidebar ul li .bgWpp {
 
 /* Nav Bar Mobile */
 #navBarMobile {
-  background: linear-gradient(90deg, #c3bf98 0%, rgb(193, 193, 161) 100%) !important;
+  background: linear-gradient(90deg, #c3bf98 0%, rgb(193, 193, 161) 100%);
 }
 #navBarMobile #logoMobile {
   font-size: 40px;
   font-family: "Oleo Script", "Arial";
   color: white;
+}
+#navBarMobile ul li .active {
+  font-family: "Poppins", "Arial";
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.129) !important;
+}
+#navBarMobile ul li .nav-link {
+  font-family: "Poppins", "Arial";
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  --bs-nav-link-hover-color: lightgrey;
 }
 
 /* Footer */
