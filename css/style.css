@@ -101,6 +101,16 @@ header #sidebar ul li .bgWpp {
   background-color: #25D366 !important;
 }
 
+/* Nav Bar Mobile */
+#navBarMobile {
+  background: linear-gradient(90deg, #c3bf98 0%, rgb(193, 193, 161) 100%) !important;
+}
+#navBarMobile #logoMobile {
+  font-size: 40px;
+  font-family: "Oleo Script", "Arial";
+  color: white;
+}
+
 /* Footer */
 footer {
   position: fixed;
@@ -181,5 +191,18 @@ main form .botonContainer .botonForm {
     width: 25%;
     height: 350px;
 }*/
+@media only screen and (max-width: 1024px) {
+  #sidebar {
+    display: none !important;
+  }
+  #navBarMobile {
+    display: flex !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #navBarMobile {
+    display: none !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

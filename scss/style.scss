@@ -3,9 +3,10 @@
 @import "./base/_font.scss";
 
 /* Layout */
-@import "./layout/sidebar.scss";
-@import "./layout/footer.scss";
-@import "./layout/main-content.scss";
+@import "./layout/_sidebar.scss";
+@import "./layout/_navbarmobile.scss";
+@import "./layout/_footer.scss";
+@import "./layout/_main-content.scss";
 
 
 
@@ -14,4 +15,18 @@
 .cards:hover {
     width: 25%;
     height: 350px;
-}*/
+}*/ 
+@media only screen and (max-width: 1024px) {
+    #sidebar {
+        display: none !important;
+    }
+    #navBarMobile {
+        display: flex !important;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #navBarMobile {
+        display: none !important;
+    }
+}
