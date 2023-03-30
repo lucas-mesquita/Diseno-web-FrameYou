@@ -11,6 +11,22 @@ a {
   text-decoration: none;
 }
 
+.bgFb {
+  background-color: #3b5998 !important;
+}
+
+.bgFb {
+  background-color: #3b5998 !important;
+}
+
+.bgIg {
+  background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
+}
+
+.bgWpp {
+  background-color: #25D366 !important;
+}
+
 /* Import fonts */
 h1 {
   text-align: center;
@@ -73,7 +89,7 @@ header #sidebar ul li .active {
   font-weight: 700;
   font-size: 16px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.129) !important;
+  --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0.129);
 }
 header #sidebar ul li .nav-link {
   font-family: "Poppins", "Arial";
@@ -87,23 +103,14 @@ header #sidebar ul li .socialMedia {
   align-items: center;
   justify-content: center;
 }
-header #sidebar ul li .bgFb {
-  background-color: #3b5998 !important;
-}
-header #sidebar ul li .bgFb {
-  background-color: #3b5998 !important;
-}
 header #sidebar ul li .bgIg {
   margin: 10px 0 10px 0;
-  background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
-}
-header #sidebar ul li .bgWpp {
-  background-color: #25D366 !important;
 }
 
 /* Nav Bar Mobile */
 #navBarMobile {
   background: linear-gradient(90deg, #c3bf98 0%, rgb(193, 193, 161) 100%);
+  padding-bottom: 10px;
 }
 #navBarMobile #logoMobile {
   font-size: 40px;
@@ -115,7 +122,7 @@ header #sidebar ul li .bgWpp {
   font-weight: 700;
   font-size: 16px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.129) !important;
+  --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0.129);
 }
 #navBarMobile ul li .nav-link {
   font-family: "Poppins", "Arial";
@@ -125,11 +132,37 @@ header #sidebar ul li .bgWpp {
   --bs-nav-link-hover-color: lightgrey;
 }
 
+/* Social Media for Mobile */
+#mediaMobile {
+  z-index: 1;
+  height: 180px;
+  position: fixed;
+  top: 65vh;
+  display: flex;
+}
+#mediaMobile ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+#mediaMobile ul li a {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mediaMobile ul li a svg {
+  width: 30px;
+}
+
 /* Footer */
 footer {
-  position: fixed;
   bottom: 0;
-  height: 30px;
+  height: 50px;
   width: 100%;
   padding-right: 50px;
   text-align: right;
@@ -205,7 +238,7 @@ main form .botonContainer .botonForm {
     width: 25%;
     height: 350px;
 }*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1023px) {
   #sidebar {
     display: none !important;
   }
@@ -213,8 +246,16 @@ main form .botonContainer .botonForm {
     display: flex !important;
   }
 }
+@media only screen and (max-width: 1023px) and (max-width: 767px) {
+  #navBarMobile span {
+    display: none !important;
+  }
+}
 @media only screen and (min-width: 1024px) {
   #navBarMobile {
+    display: none !important;
+  }
+  #mediaMobile {
     display: none !important;
   }
 }

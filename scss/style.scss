@@ -15,18 +15,31 @@
 .cards:hover {
     width: 25%;
     height: 350px;
-}*/ 
-@media only screen and (max-width: 1024px) {
+}*/
+@media only screen and (max-width: 1023px) {
     #sidebar {
         display: none !important;
     }
+
     #navBarMobile {
         display: flex !important;
     }
+
+    @media only screen and (max-width: 767px) {
+        #navBarMobile {
+            span {
+                display: none !important;
+            }
+        }
+    }
 }
 
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1024px) {
     #navBarMobile {
+        display: none !important;
+    }
+
+    #mediaMobile {
         display: none !important;
     }
 }

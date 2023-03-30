@@ -1,6 +1,7 @@
 /* Side Bar */
 header {
     z-index: 1;
+
     #sidebar {
         width: 250px;
         min-height: 100vh;
@@ -32,7 +33,7 @@ header {
                 font-weight: 700;
                 font-size: 16px;
                 color: white;
-                background-color: rgba(0, 0, 0, 0.129) !important;
+                --bs-nav-pills-link-active-bg: rgba(0, 0, 0, 0.129);
             }
 
             // Modificar nav-link 
@@ -51,22 +52,8 @@ header {
                 justify-content: center;
             }
 
-            // Colores de redes sociales 
-            .bgFb {
-                background-color: #3b5998 !important;
-            }
-
-            .bgFb {
-                background-color: #3b5998 !important;
-            }
-
             .bgIg {
                 margin: 10px 0 10px 0;
-                background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 40%, #d6249f 50%, #285AEB 90%) !important;
-            }
-
-            .bgWpp {
-                background-color: #25D366 !important;
             }
         }
     }
