@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Rellena ese espacio en tu corazon con un buen cuadrito de FrameYou, no te vamos a fallar!">
+    <meta name="keywords" content="cuadros, cuadro, marco, frame, fotos">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <!--Link AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Link BS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <!--Link CSS-->
-    <link rel="stylesheet" href="./css/style.css ">
+    <link rel="stylesheet" href="./css/style.css">
     <title>FrameYou | Inicio</title>
 </head>
 
@@ -114,13 +117,12 @@
         </ul>
     </section>
 
-    <!--Para resolucion grande-->
+    <!--Para resoluciones mayores a 1025px-->
     <div class="d-flex">
+        <!--SideBar-->
         <header class="flex-shrink-0">
-
-            <!--SideBar-->
+            
             <nav id="sidebar" class="d-flex flex-column p-3">
-
                 <!--Logo-->
                 <a href="#" id="logo" class="d-flex text-decoration-none"> FrameYou
                 </a>
@@ -247,7 +249,7 @@
 
             <!--Encabezado-->
             <section>
-                <h1>Tipos de Cuadros</h1>
+                <h1>Bienvenido a FrameYou</h1>
             </section>
 
             <!--Texto informativo-->
@@ -259,7 +261,7 @@
             <!--Cards-->
             <section class="row row-cols-1 row-cols-xl-3 g-4 p-3 mb-2">
                 <article class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <img class="card-img-top"
                             src="https://smash-images.photobox.com/original/9e441d997e3e8f00dcf73aa9c44ec90737407493_Lienzo-gallery-01-4_3-1080.jpg"
                             alt="Imagen de cuadro de lienzo">
@@ -272,7 +274,7 @@
                     </div>
                 </article>
                 <article class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <img class="card-img-top"
                             src="https://smash-images.photobox.com/original/4c25cc7b978c2faa86aa2dac0fd60a5937b374c6_Cuadro_Fotos-gallery-01-4_3-540.jpg"
                             alt="Imagen de Cuadro en marco con vidrio">
@@ -284,7 +286,7 @@
                     </div>
                 </article>
                 <article class="col">
-                    <div class="card">
+                    <div class="card" data-aos="fade-up">
                         <img class="card-img-top"
                             src="https://smash-images.photobox.com/original/0d4a481f886e17c60129306c18c9dfbd85f8c010_Cuadro_Aluminio-gallery-01-4_3-540.jpg"
                             alt="Imagen de cuadro en placa de aluminio de 3 milímetros">
@@ -305,8 +307,10 @@
         <span class="textPie">@2023 FrameYou.</span>
     </footer>
 
-    <!--Script BS-->
+    <!--Scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init(); </script>
 </body>
 
 </html>

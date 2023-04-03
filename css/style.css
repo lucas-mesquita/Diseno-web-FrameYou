@@ -34,6 +34,7 @@ h1 {
   font-weight: 700;
   font-size: 40px;
   color: rgb(50, 50, 50);
+  padding: 20px 0;
 }
 
 h2 {
@@ -238,20 +239,20 @@ main form .botonContainer .botonForm {
     width: 25%;
     height: 350px;
 }*/
-@media only screen and (max-width: 1023px) {
+/* Ocultamos elementos para resoluciones menores a 1024px */
+@media only screen and (max-width: 1024px) {
   #sidebar {
     display: none !important;
   }
-  #navBarMobile {
-    display: flex !important;
-  }
+  /* Ocultamos texto de los iconos para resoluciones menores a 767px */
 }
-@media only screen and (max-width: 1023px) and (max-width: 767px) {
+@media only screen and (max-width: 1024px) and (max-width: 700px) {
   #navBarMobile span {
     display: none !important;
   }
 }
-@media only screen and (min-width: 1024px) {
+/* Ocultamos elementos para resoluciones mayores a 1025px */
+@media only screen and (min-width: 1025px) {
   #navBarMobile {
     display: none !important;
   }
