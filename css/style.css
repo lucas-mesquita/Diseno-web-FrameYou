@@ -162,11 +162,11 @@ header #sidebar ul li .bgIg {
 
 /* Footer */
 footer {
-  bottom: 0;
+  z-index: 1;
+  display: block;
+  justify-content: flex-end !important;
   height: 50px;
-  width: 100%;
-  padding-right: 50px;
-  text-align: right;
+  padding: 10px !important;
   background: linear-gradient(-90deg, rgb(195, 191, 152) 0%, rgb(193, 193, 161) 100%);
 }
 footer .textPie {
@@ -199,39 +199,34 @@ main section article .card {
   border: none;
   align-items: center;
 }
+main section .ubi {
+  margin: 10px 10px;
+}
 main form {
-  text-align: center;
-}
-main form .itemForm {
-  display: inline-block;
-  width: 500px;
-  height: 250px;
-  text-align: left;
-}
-main form .itemForm .ingresoForm {
-  margin: 10px 0;
-  height: 40px;
-  width: 400px;
+  margin: 50px 0;
   font-family: "Poppins", "Arial";
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
-  color: rgb(50, 50, 50);
 }
-main form .itemForm .ingresoText {
-  font-family: "Poppins", "Arial";
-  font-weight: 400;
-  font-size: 16px;
-  color: rgb(50, 50, 50);
+main form div {
+  width: 100%;
+  max-width: 800px;
 }
-main form .botonContainer .botonForm {
-  width: 200px;
-  height: 30px;
-  font-family: "Poppins", "Arial";
-  font-weight: 400;
-  font-size: 16px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(195, 191, 152);
-  border: 0px;
+main form .botonForm {
+  color: white;
+  background-color: rgb(193, 193, 161);
+}
+main form .botonForm:hover {
+  background-color: hwb(60 51% 39%);
+  color: white;
+}
+main form .botonForm:active {
+  border: none;
+  background-color: hwb(60 51% 39%);
+  color: white;
+}
+main form .botonForm:link {
+  background-color: hwb(60 51% 39%);
 }
 
 /* Hover 

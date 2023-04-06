@@ -26,49 +26,40 @@ main {
                 align-items: center;
             }
         }
+        .ubi{
+            margin: 10px 10px;
+        }
     }
 
     // Formulario pagina ayuda
     form {
-        text-align: center;
+        margin: 50px 0;
+        font-family: 'Poppins', 'Arial';
+        font-weight: 700;
+        font-size: 16px;
 
-        .itemForm {
-            display: inline-block;
-            width: 500px;
-            height: 250px;
-            text-align: left;
+        div{
+            width: 100%;
+            max-width: 800px;
+        }
+        .botonForm{
+            color: white;
+            background-color: rgb(193, 193, 161) ;
 
-            // Lado Izq
-            .ingresoForm {
-                margin: 10px 0;
-                height: 40px;
-                width: 400px;
-                font-family: 'Poppins', 'Arial';
-                font-weight: 400;
-                font-size: 16px;
-                color: rgb(50, 50, 50);
+            &:hover{
+                background-color: hwb(60 51% 39%) ;
+                color: white;
             }
 
-            // Lado Der
-            .ingresoText {
-                font-family: 'Poppins', 'Arial';
-                font-weight: 400;
-                font-size: 16px;
-                color: rgb(50, 50, 50);
+            &:active{
+                border: none;
+                background-color: hwb(60 51% 39%) ;
+                color: white;
+            }
+            &:link{
+                background-color: hwb(60 51% 39%) ;
             }
         }
 
-        .botonContainer {
-            .botonForm {
-                width: 200px;
-                height: 30px;
-                font-family: 'Poppins', 'Arial';
-                font-weight: 400;
-                font-size: 16px;
-                color: rgb(255, 255, 255);
-                background-color: rgb(195, 191, 152);
-                border: 0px;
-            }
-        }
     }
 }

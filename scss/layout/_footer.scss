@@ -1,12 +1,13 @@
 /* Footer */
 
 footer {
-    bottom: 0;
+    z-index: 1;
+    display: block;
+    justify-content: flex-end !important;
     height: 50px;
-    width: 100%;
-    padding-right: 50px;
-    text-align: right;
+    padding: 10px !important;
     background: linear-gradient(-90deg, rgb(195, 191, 152) 0%, rgb(193, 193, 161) 100%);
+
     .textPie {
         font-family: 'Poppins', 'Arial';
         font-weight: 400;
