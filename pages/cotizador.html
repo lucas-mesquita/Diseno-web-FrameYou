@@ -218,88 +218,38 @@
         <!--Main-->
         <main class="flex-grow-1 container-fluid p-0">
 
-            <!--Banner-->
-            <section class="mb-2">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://smash-images.photobox.com/optimised/fea6cc9abf18e276d05cd177cc367439a4a39ee6_file_desktop_WallArt-RP-lifestyle-3_1-5760-@1x.webp"
-                                class="d-block w-100" alt="Imagen de persona observando un cuadro en la pared">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://smash-images.photobox.com/optimised/3291040953e288fd47fa612bff7fda71af08179f_file_desktop_lienzo-simple-lifestyle-3_1-5760.webp"
-                                class="d-block w-100" alt="Imagen de cuadro de lienzo en la pared">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://smash-images.photobox.com/optimised/5eebf0359a9fe6ef75323104c8971d91dec0dd02_file_desktop_simple-canvas-lifestyle-3_1-3840-@1x.jpg"
-                                class="d-block w-100" alt="Imagen de cuadro de lienzo en un escritorio">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
-
             <!--Encabezado-->
             <section>
-                <h1>Bienvenido a FrameYou</h1>
+                <h1>Cotizador</h1>
+                <article>
+                    <h2>Contamos con un cotizador para que puedas saber el costo estimado del pedido.</h2>
+                </article>
             </section>
 
-            <!--Texto informativo-->
-            <section class="text">
-                <p>En FrameYou ofrecemos materiales de alta calidad ademas de opciones especificas para tu gusto.
-                </p>
-            </section>
+            <!--Solicitud medidas-->
+            <form id="formMedidas" class="d-flex flex-column align-items-center container">
+                <h3>Porfavor ingrese las medidas a cotizar y luego el tipo de cuadro.</h3>
+                <div class="m-3">
+                    <label class="form-label" for="ancho">Ancho (cm)</label>
+                    <input class="form-control" type="number" id="ancho" name="ancho" placeholder="Ancho mínimo 30cm"
+                        required>
+                </div>
+                <div class="m-3">
+                    <label class="form-label" for="alto">Alto (cm)</label>
+                    <input class="form-control" type="number" id="alto" name="alto" placeholder="Altura mínima 30cm"
+                        required>
+                </div>
+                <div class="m-3">
+                    <label class="form-label" for="select">Tipo de cuadro</label>
+                    <select class="form-select" name="select" required>
+                        <option selected>Lienzo</option>
+                        <option value="value2">Marco con vidrio</option>
+                        <option value="value3">Aluminio</option>
+                    </select>
+                </div>
+                <button class="btn botonForm">Enviar</button>
+            </form>
 
-            <!--Cards-->
-            <section class="row row-cols-1 row-cols-xl-3 g-4 p-3 mb-2">
-                <article class="col">
-                    <div class="card" data-aos="fade-up">
-                        <img class="card-img-top"
-                            src="https://smash-images.photobox.com/original/9e441d997e3e8f00dcf73aa9c44ec90737407493_Lienzo-gallery-01-4_3-1080.jpg"
-                            alt="Imagen de cuadro de lienzo">
-                        <div class="card-body">
-                            <h2>Cuadro de Lienzo</h2>
-                            <p>La imagen se imprime sibre lienzo o canva para luego ser tensado en un bastidor de
-                                madera.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="card" data-aos="fade-up">
-                        <img class="card-img-top"
-                            src="https://smash-images.photobox.com/original/4c25cc7b978c2faa86aa2dac0fd60a5937b374c6_Cuadro_Fotos-gallery-01-4_3-540.jpg"
-                            alt="Imagen de Cuadro en marco con vidrio">
-                        <div class="card-body">
-                            <h2>Cuadro en marco con vidrio</h2>
-                            <p>Impreso en papel fotográfico y colocado en un marco que se adecue a tus satisfacciones.
-                            </p>
-                        </div>
-                    </div>
-                </article>
-                <article class="col">
-                    <div class="card" data-aos="fade-up">
-                        <img class="card-img-top"
-                            src="https://smash-images.photobox.com/original/0d4a481f886e17c60129306c18c9dfbd85f8c010_Cuadro_Aluminio-gallery-01-4_3-540.jpg"
-                            alt="Imagen de cuadro en placa de aluminio de 3 milímetros">
-                        <div class="card-body">
-                            <h2>Cuadro en Aluminio</h2>
-                            <p>Tu fotografía se verá nítida con los colores sublimados gracias al aluminio y tendrá un
-                                aspecto
-                                mate.</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
         </main>
     </div>
 

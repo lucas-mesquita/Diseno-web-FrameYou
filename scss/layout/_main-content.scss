@@ -26,40 +26,57 @@ main {
                 align-items: center;
             }
         }
-        .ubi{
+
+        .ubi {
             margin: 10px 10px;
         }
     }
 
     // Formulario pagina ayuda
-    form {
+    #formContacto {
         margin: 50px 0;
         font-family: 'Poppins', 'Arial';
         font-weight: 700;
         font-size: 16px;
 
-        div{
+        div {
             width: 100%;
             max-width: 800px;
         }
-        .botonForm{
+    }
+
+    // Formulario medidas pagina Cotizador
+    #formMedidas {
+
+        font-family: 'Poppins', 'Arial';
+        font-weight: 700;
+        font-size: 16px;
+
+        div {
+            text-align: center;
+        }
+    }
+
+    // Botones de form
+    form {
+        .botonForm {
             color: white;
-            background-color: rgb(193, 193, 161) ;
+            background-color: rgb(193, 193, 161);
 
-            &:hover{
-                background-color: hwb(60 51% 39%) ;
+            &:hover {
+                background-color: hwb(60 51% 39%);
                 color: white;
             }
 
-            &:active{
+            &:active {
                 border: none;
-                background-color: hwb(60 51% 39%) ;
+                background-color: hwb(60 51% 39%);
                 color: white;
             }
-            &:link{
-                background-color: hwb(60 51% 39%) ;
+
+            &:link {
+                background-color: hwb(60 51% 39%);
             }
         }
-
     }
 }

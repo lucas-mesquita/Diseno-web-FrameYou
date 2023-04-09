@@ -202,15 +202,23 @@ main section article .card {
 main section .ubi {
   margin: 10px 10px;
 }
-main form {
+main #formContacto {
   margin: 50px 0;
   font-family: "Poppins", "Arial";
   font-weight: 700;
   font-size: 16px;
 }
-main form div {
+main #formContacto div {
   width: 100%;
   max-width: 800px;
+}
+main #formMedidas {
+  font-family: "Poppins", "Arial";
+  font-weight: 700;
+  font-size: 16px;
+}
+main #formMedidas div {
+  text-align: center;
 }
 main form .botonForm {
   color: white;
